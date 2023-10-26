@@ -8,11 +8,11 @@
  */
 void swap_ints(int *a, int *b)
 {
-  int tmp;
+int tmp;
 
-  tmp = *a;
-  *a = *b;
-  *b = tmp;
+tmp = *a;
+*a = *b;
+*b = tmp;
 }
 
 
@@ -29,11 +29,11 @@ size_t gap, i, j;
 
 
 if (array == NULL || size < 2)
-  return;
+return;
 
 
 for (gap = 1; gap < (size / 3);)
-  gap = gap * 3 + 1;
+gap = gap * 3 + 1;
 
 for (; gap >= 1; gap /= 3)
 {
